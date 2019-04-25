@@ -1,0 +1,55 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  color: white;
+  background-color: black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.start,
+.restart {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.start {
+  display: flex;
+}
+
+.restart {
+  display: none;
+}
+
+.info {
+  padding: 1rem;
+  display: none;
+}
+
+.announcement {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+button {
+  margin: 0;
+  border: none;
+  padding: 0.8rem;
+  background: #68391e;
+  color: white;
+  font-size: 2rem;
+}

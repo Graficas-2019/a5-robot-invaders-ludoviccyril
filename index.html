@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Robot Rush</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="overlay">
+      <div class="start">
+        <div class="announcement">Welcome to Robot Rush!</div>
+        <button>Start game now</button>
+      </div>
+      <div class="restart">
+        <div class="announcement">Your score:</div>
+        <div class="announcement score-value"></div>
+        <div class="announcement">High score:</div>
+        <div class="announcement high-score-value"></div>
+        <button>Start new game now</button>
+      </div>
+      <div class="info">
+        <div class="time">
+          Time left: <span class="time-value"></span>
+        </div>
+        <div class="score">
+          Score: <span class="score-value"></span>
+        </div>
+      </div>
+    </div>
+    <canvas id="robots" width="800" height="600"></canvas>
+
+    <script src="libs/jquery-3.3.1/jquery-3.3.1.js"></script>
+    <script src="libs/three.js/three.js"></script>
+    <script src="libs/three.js/controls/OrbitControls.js"></script>
+    <script src="libs/three.js/loaders/GLTFLoader.js"></script>
+    <script src="libs/three.js/loaders/inflate.min.js"></script>
+    <script src="libs/three.js/loaders/FBXLoader.js"></script>
+    <script src="libs/three.js/utils/cloneFBX.js""></script>
+    <script src="libs/keyframe.js/keyframe.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
